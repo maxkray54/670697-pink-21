@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Левин](https://up.htmlacademy.ru/adaptive/21/user/670697).
-* Наставник: `Неизвестно`.
+* Наставник: `Алексей Елькин`.
 
 ---
 
