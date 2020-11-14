@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <section class="page-header__wrapper">
+    <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Пинк">
       </a>
@@ -39,99 +39,104 @@
           </ul>
         </div>
       </nav>
-    </section>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Пинк — приятный мир</h1>
-
     <section class="application">
-      <div class="application__wrapper">
-        <div class="application__header">
-          <p class="application__description">Взгляниет на жизнь иначе!</p>
-          <img class="application__image" src="https://via.placeholder.com/150x150" alt="Приложение Пинк">
-          <a href="#">Скачать приложение</a>
-        </div>
-        <div class="application__main">
-          <div class="platform">
-            <img class="platform__logo" src="https://via.placeholder.com/150x150" alt="Apple">
-            <img class="platform__logo" src="https://via.placeholder.com/150x150" alt="Android">
-            <img class="platform__logo" src="https://via.placeholder.com/150x150" alt="Microsoft">
-            <p class="platform__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+      <h2 class="visually-hidden">Приложение на всех платформах</h2>
+      <div class="application__header">
+        <p class="application__description">Взгляните на жизнь иначе!</p>
+        <img class="application__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Приложение Пинк">
+        <a href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+      </div>
+      <div class="application__main">
+        <div class="platform">
+          <a href="https://www.apple.com/ru/app-store/"><img class="platform__logo"
+              src="https://via.placeholder.com/150x150" width="150" height="150" alt="Apple"></a>
+          <a href="https://play.google.com/store?hl=ru&gl=US"><img class="platform__logo"
+              src="https://via.placeholder.com/150x150" width="150" height="150" alt="Android"></a>
+          <a href="https://www.microsoft.com/ru-by/store/apps/windows"><img class="platform__logo"
+              src="https://via.placeholder.com/150x150" width="150" height="150" alt="Microsoft"></a>
+          <p class="platform__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </section>
 
     <section class="advantages">
+      <h2 class="visually-hidden">Приложение спасет ваш мир</h2>
       <div class="advantages__wrapper">
         <div class="advantages__sentence">
-          <p class="advantages__title">Устали от серости мегаполиса?</p>
-          <p class="advantages__title">Нам есть, что вампредложить!</p>
+          <h3 class="advantages__title">Устали от серости мегаполиса?</h3>
+          <h3 class="advantages__title">Нам есть, что вам предложить!</h3>
         </div>
-        <div class="advantages__list">
-          <div class="advantages__item">
+        <ul class="advantages__list">
+          <li class="advantages__item">
             <h3 class="advantages__subtitle">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
-          </div>
-          <div class="advantages__item">
+          </li>
+          <li class="advantages__item">
             <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
-          </div>
-          <div class="advantages__item">
+          </li>
+          <li class="advantages__item">
             <h3 class="advantages__subtitle">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
-          </div>
-        </div>
-        <img class="advantages__image" src="https://via.placeholder.com/150x150" alt="Приветсвие приложения">
+          </li>
+        </ul>
+        <img class="advantages__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Приветсвие приложения">
       </div>
     </section>
 
     <section class="article">
-      <div class="article__wrapper">
-        <img class="article__image" src="https://via.placeholder.com/150x150" alt="Таймер">
-        <div class="article__list">
-          <h3 class="article__title">Эффект на 24 часа!</h3>
-          <p class="article__description">Британские ученые провели исследования и доказали, что положительный эффект от
-            использования приложения длится целые сутки!</p>
-          <a class="article__link" href="#">Узнать больше об исследовании</a>
-        </div>
+      <h2 class="visually-hidden">Статьи о пользе Пинк</h2>
+      <img class="article__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Таймер">
+      <div class="article__information">
+        <h3 class="article__title">Эффект на 24 часа!</h3>
+        <p class="article__description">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="article__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
-          <div class="reviews__item slider__item">
-            <h4 class="reviews__name">Николай Петров</h4>
+      <h2 class="visually-hidden">Отзывы пользователей Пинк</h2>
+      <article class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__name">Николай Петров</h3>
             <p class="reviews__job">25 лет, водитель трамвая</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__item slider__item">
-            <h4 class="reviews__name">Николай Петров</h4>
+          </li>
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__name">Николай Петров</h3>
             <p class="reviews__job">25 лет, водитель трамвая</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__item slider__item">
-            <h4 class="reviews__name">Николай Петров</h4>
+          </li>
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__name">Николай Петров</h3>
             <p class="reviews__job">25 лет, водитель трамвая</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          </li>
+        </ul>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="rate">
+      <h2 class="visually-hidden">Варианты подписки</h2>
       <div class="rate__wrapper slider">
         <table class="rate__table">
           <tr class="rate__row">
@@ -189,48 +194,52 @@
             </td>
           </tr>
         </table>
-        <p class="rate__toggles slider__toggles">
+        <div class="rate__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle slider__toggle--current" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
-        </p>
+        </div>
       </div>
     </section>
 
     <section class="connection">
+      <h2 class="visually-hidden">Как с нами связаться</h2>
       <div class="connection__wrapper">
-        <p class="connection__title">Остались вопросы?</p>
-        <p class="connection__title">Свяжитесь с нами!</p>
-        <div class="connection__list">
-          <div class="connection__item">
+        <h3 class="connection__title">Остались вопросы?</h3>
+        <h3 class="connection__title">Свяжитесь с нами!</h3>
+        <ul class="connection__list">
+          <li class="connection__item">
             <p class="connection__subtitle">Звоните:</p>
-            <a class="connection__link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-          </div>
-          <div class="connection__item">
+            <a class="connection__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="connection__item">
             <p class="connection__subtitle">Пишите:</p>
             <a class="connection__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="connection__item">
+          </li>
+          <li class="connection__item">
             <p class="connection__subtitle">Приезжайте в гости:</p>
             <a class="connection__link" href="#">ул. Большая Конюшенная, 19/8</a>
-          </div>
-        </div>
-        <div class="connection__map">
+          </li>
+        </ul>
+      </div>
+      <div class="connection__map">
 
-        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__wrapper">
-      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Лого">
-      <div class="page-footer__social-list">
-        <img class="page-footer__social-item" src="https://via.placeholder.com/150x150" alt="Twitter">
-        <img class="page-footer__social-item" src="https://via.placeholder.com/150x150" alt="Facebook">
-        <img class="page-footer__social-item" src="https://via.placeholder.com/150x150" alt="Youtube">
-      </div>
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Лого">
+      <ul class="page-footer__social-list">
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Twitter"></a></li>
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Facebook"></a></li>
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Youtube"></a></li>
+      </ul>
       <p class="page-footer__developer">Разработано</p>
-    </section>
+    </div>
   </footer>
 </body>
 
