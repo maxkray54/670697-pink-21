@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <form name="pink" method="post" action="#">
+      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="full-name">
+        <h2 class="visually-hidden">Введите ваше ФИО</h2>
+        <p class="full-name__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+          бонусную карту!</p>
+        <label class="full-name__subtitle" for="surname">Фамилия:</label>
+        <input class="full-name__data" id="surname" name="surname" type="text" required placeholder="Укажите фамилию *">
+        <label class="full-name__subtitle" for="name">Имя:</label>
+        <input class="full-name__data" id="name" name="name" type="text" required placeholder="Введите ваше имя *">
+        <label class="full-name__subtitle" for="middle-name">Отчество:</label>
+        <input class="full-name__data" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
+      </section>
+
+      <fieldset class="achievement">
+        <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="achievement__list">
+          <li class="achievement__item">
+            <input class="achievement__choice" id="selfie" name="selfie" type="checkbox" checked>
+            <label class="achievement__subtitle" for="selfie">Сделал селфи с акулой</label>
+          </li>
+          <li class="achievement__item">
+            <input class="achievement__choice" id="beach" name="beach" type="checkbox" checked>
+            <label class="achievement__subtitle" for="beach">Обгорел на пляже</label>
+          </li>
+          <li class="achievement__item">
+            <input class="achievement__choice" id="chuck" name="chuck" type="checkbox">
+            <label class="achievement__subtitle" for="chuck">Видел Чака Норриса</label>
+          </li>
+          <li class="achievement__item">
+            <input class="achievement__choice" id="souvenir" name="souvenir" type="checkbox">
+            <label class="achievement__subtitle" for="souvenir">Накупил сувениров</label>
+          </li>
+          <li class="achievement__item">
+            <input class="achievement__choice" id="tower" name="tower" type="checkbox" checked>
+            <label class="achievement__subtitle" for="tower">Удержал башню</label>
+          </li>
+          <li class="achievement__item">
+            <input class="achievement__choice" id="hotel" name="hotel" type="checkbox">
+            <label class="achievement__subtitle" for="hotel">Разгромил отель </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contacts">
+        <legend class="contacts__title">Контактная информация</legend>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <input class="contacts__communication" id="number" name="number" type="tel" required
+              placeholder="Номер, пожалуйста">
+            <label class="contacts__subtitle" for="number">Номер телефона</label>
+          </li>
+          <li class="contacts__item">
+            <input class="contacts__communication" id="email" name="email" type="email" required
+              placeholder="Введите почту *">
+            <label class="contacts__subtitle" for="email">Адрес почты</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="operating-system">
+        <legend class="operating-system__title">С каким приложением путешествовали?</legend>
+        <ul class="operating-system__list">
+          <li class="operating-system__item">
+            <input class="operating-system__type" id="iOS" name="iOS" type="radio" checked>
+            <label class="operating-system__subtitle" for="iOS">Pink для iOS</label>
+          </li>
+          <li class="operating-system__item">
+            <input class="operating-system__type" id="Android" name="Android" type="radio">
+            <label class="operating-system__subtitle" for="Android">Pink на Android</label>
+          </li>
+          <li class="operating-system__item">
+            <input class="operating-system__type" id="Windows" name="Windows" type="radio">
+            <label class="operating-system__subtitle" for="Windows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="descriprion">
+        <legend class="descriprion__title">Опишите свои эмоции</legend>
+        <textarea class="descriprion__text" name="text" rows="10"
+          cols="45">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </fieldset>
+      <input class="post-form" name="send" type="submit" value="Отправить форму">
+    </form>
+    <p class="necessarily">* — обязательные поля</p>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Лого">
+      <ul class="page-footer__social-list">
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Twitter"></a></li>
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Facebook"></a></li>
+        <li><a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Youtube"></a></li>
+      </ul>
+      <p class="page-footer__developer">Разработано</p>
+    </div>
+  </footer>
+</body>
+
+</html>
