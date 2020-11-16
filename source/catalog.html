@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="main-title">Фотографии пользователей</h1>
+    <p class="main-subtitle">Взгляните на фотографии, которые выкладывают пользователи!
+      Видите, как не хватает ваших?</p>
+    <div class="gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Прыжок с горы">
+          <p class="gallery__name">Анна (5 минут назад)</p>
+          <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <button class="gallery__like">Нравится: 215</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Супер авто">
+          <p class="gallery__name">Левон (5 часов назад)</p>
+          <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <button class="gallery__like">Нравится: 356</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Барабаны">
+          <p class="gallery__name">Антон (12 часов назад)</p>
+          <p class="gallery__comment">Соседи будут рады!</p>
+          <button class="gallery__like">Нравится: 666</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Через крышу в космос">
+          <p class="gallery__name">Борис (20 часов назад)</p>
+          <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="gallery__like">Нравится: 215</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Кубанская бахча">
+          <p class="gallery__name">Сергей (25 часов назад)</p>
+          <p class="gallery__comment">Самая кубанская в мире!</p>
+          <button class="gallery__like">Нравится: 4</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Вид сверху">
+          <p class="gallery__name">Максим (40 часов назад)</p>
+          <p class="gallery__comment">Где снег-то?</p>
+          <button class="gallery__like">Нравится: 150</button>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Из чужого окна">
+          <p class="gallery__name">Надежда (45 часов назад)</p>
+          <p class="gallery__comment">Всем GM и взаимные лайки!</p>
+          <button class="gallery__like">Нравится: 2560</button>
+        </li>
+      </ul>
+    </div>
+    <p class="main-subtitle">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+    <form name="catalog-editor" method="post" action="#">
+      <fieldset class="editor">
+        <legend class="editor__title">Редактор изображений</legend>
+        <img class="editor__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+        <label class="editor__possibility" for="size">
+          Иконка
+        </label>
+        <label class="editor__possibility" for="color">
+          Иконка
+        </label>
+        <label class="editor__possibility" for="shadow">
+          Иконка
+        </label>
+        <input class="editor__variety" id="size" name="size" type="range">
+        <input class="editor__variety" id="color" name="color" type="range">
+        <input class="editor__variety" id="shadow" name="shadow" type="range">
+        <input class="editor__post" type="button" value="Запостить">
+        <button class="editor__cancel">Отмена</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Лого">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Twitter">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Facebook">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__developer">Разработано</p>
+    </div>
+  </footer>
+</body>
+
+</html>
