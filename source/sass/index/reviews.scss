@@ -1,0 +1,29 @@
+.reviews{
+
+  &__list{
+    list-style: none;
+  }
+
+  &__name{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+
+  &__text{
+    color: $lite-black;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 44px;
+  }
+
+  &__job{
+    color: $lite-black;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__toggles{
+    margin-bottom: 60px;
+  }
+}

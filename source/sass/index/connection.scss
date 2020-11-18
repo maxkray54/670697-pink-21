@@ -1,0 +1,35 @@
+.connection{
+
+  &__wrapper{
+    margin-top: 47px;
+  }
+
+  &__title{
+    color: $lite-black;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    margin-top: 18px;
+  }
+
+  &__list{
+    list-style: none;
+    padding: 0px;
+  }
+
+  &__subtitle{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-top: 31px;
+    margin-bottom: 13px;
+  }
+
+  &__link{
+    color: $pink;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}

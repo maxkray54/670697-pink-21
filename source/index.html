@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -17,22 +18,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -49,10 +50,10 @@
         <p class="application__description">Взгляните на жизнь иначе!</p>
         <img class="application__image" src="https://via.placeholder.com/150x150" width="150" height="150"
           alt="Приложение Пинк">
-        <a href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
       </div>
       <div class="application__main">
         <div class="platform">
+          <a class="platform__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <a href="https://www.apple.com/ru/app-store/"><img class="platform__logo"
               src="https://via.placeholder.com/150x150" width="150" height="150" alt="Apple"></a>
           <a href="https://play.google.com/store?hl=ru&gl=US"><img class="platform__logo"
@@ -68,8 +69,8 @@
       <h2 class="visually-hidden">Приложение спасет ваш мир</h2>
       <div class="advantages__wrapper">
         <div class="advantages__sentence">
-          <h3 class="advantages__title">Устали от серости мегаполиса?</h3>
-          <h3 class="advantages__title">Нам есть, что вам предложить!</h3>
+          <p class="advantages__title">Устали от серости мегаполиса?</p>
+          <p class="advantages__title">Нам есть, что вам предложить!</p>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -87,9 +88,11 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
           </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Приветсвие приложения">
+          </li>
         </ul>
-        <img class="advantages__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-          alt="Приветсвие приложения">
       </div>
     </section>
 
@@ -140,56 +143,59 @@
       <div class="rate__wrapper slider">
         <table class="rate__table">
           <tr class="rate__row">
-            <td class="rate-column"></td>
-            <td class="rate-column">
-              База 1,99 USD
+            <td class="rate__column--hidden"></td>
+            <td class="rate__column--dark">
+              <p class="rate__name">База</p>
+              <p>1,99 USD</p>
             </td>
-            <td class="rate-column">
-              Стандарт 3,99 USD
+            <td class="rate__column--dark">
+              <p class="rate__name">Стандарт</p>
+              <p>3,99 USD</p>
             </td>
-            <td class="rate-column">
-              Анлим 9,99 USD
+            <td class="rate__column--dark">
+              <p class="rate__name">Анлим</p>
+              <p>9,99 USD</p>
             </td>
           </tr>
           <tr class="rate__row">
-            <td class="rate-column">
+            <td class="rate__column">
               Розовый фильтр
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Нету
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Нету
             </td>
           </tr>
           <tr class="rate__row">
-            <td class="rate-column">
+            <td class="rate__column">
               Смайлики
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Нету
             </td>
           </tr>
           <tr class="rate__row">
-            <td class="rate-column">
+            <td class="rate__column">
               Комментарии
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
-            <td class="rate-column">
+            <td class="rate__column">
               Есть
             </td>
           </tr>
@@ -205,8 +211,8 @@
     <section class="connection">
       <h2 class="visually-hidden">Как с нами связаться</h2>
       <div class="connection__wrapper">
-        <h3 class="connection__title">Остались вопросы?</h3>
-        <h3 class="connection__title">Свяжитесь с нами!</h3>
+        <p class="connection__title">Остались вопросы?</p>
+        <p class="connection__title">Свяжитесь с нами!</p>
         <ul class="connection__list">
           <li class="connection__item">
             <p class="connection__subtitle">Звоните:</p>

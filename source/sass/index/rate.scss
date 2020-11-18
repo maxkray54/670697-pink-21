@@ -1,0 +1,31 @@
+.rate{
+  background-color: $bg-gray;
+
+  &__wrapper{
+    padding-top: 60px;
+  }
+
+  &__column{
+    background-color: $white;
+    border: 1px solid $table-stroke;
+    padding: 10px 25px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__column--dark{
+    background-color: $lite-black;
+    color: $white;
+    padding: 0px 25px;
+    text-transform: uppercase;
+  }
+
+  &__name{
+    font-weight: bold;
+  }
+
+  &__toggles{
+    margin-top: 45px;
+    padding-bottom: 49px;
+  }
+}
