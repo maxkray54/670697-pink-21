@@ -1,0 +1,19 @@
+.article{
+
+  &__title{
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__description{
+    color: $lite-black;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__link{
+    color: $pink;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
