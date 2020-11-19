@@ -1,12 +1,13 @@
-.application{
-  background-image: url(../img/background-title.jpg);
+.application {
+  background-image: url("../img/background-title.jpg");
+  background-color: $lite-black;
   background-repeat: no-repeat;
 
-  &__header{
+  &__header {
     margin: 5px;
   }
 
-  &__description{
+  &__description {
     font-size: 24px;
     color: $white;
     margin-top: 29px;

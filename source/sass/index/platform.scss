@@ -1,7 +1,7 @@
-.platform{
+.platform {
   background-color: $platform-bg;
 
-  &__link{
+  &__link {
     color: $white;
     font-weight: 700;
     font-size: 18px;
@@ -14,10 +14,9 @@
     margin-bottom: 32px;
   }
 
-  &__description{
+  &__description {
     color: $white;
     margin-top: 31px;
     margin-bottom: 38px;
   }
 }
-

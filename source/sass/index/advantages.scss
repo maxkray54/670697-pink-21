@@ -1,30 +1,29 @@
-.advantages{
-
-  &__sentence{
+.advantages {
+  &__sentence {
     margin-bottom: 70px;
   }
 
-  &__title{
+  &__title {
     color: $lite-black;
     font-size: 24px;
     line-height: 29px;
     font-weight: 300;
     margin-top: 46px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
-  &__list{
+  &__list {
     list-style: none;
     background-color: $bg-gray;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 24px;
   }
 
-  &__description{
+  &__description {
     color: $lite-black;
     font-size: 14px;
     line-height: 24px;
