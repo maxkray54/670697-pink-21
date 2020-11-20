@@ -17,7 +17,7 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">
                 Главная
               </a>
@@ -27,7 +27,7 @@
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item--active">
+            <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Конкурс
               </a>
@@ -52,7 +52,7 @@
         карту!</p>
     </div>
     <form class="form" name="pink" method="post" action="#">
-      <fieldset class="full-name">
+      <fieldset class="full-name form__fieldset">
         <legend>Введите ваше ФИО</legend>
         <label class="full-name__subtitle" for="surname">Фамилия:</label>
         <input class="full-name__data" id="surname" name="surname" type="text" required placeholder="Укажите фамилию *">
@@ -62,7 +62,7 @@
         <input class="full-name__data" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
       </fieldset>
 
-      <fieldset class="achievement">
+      <fieldset class="achievement form__fieldset">
         <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="achievement__list">
           <li class="achievement__item">
@@ -92,7 +92,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="contacts">
+      <fieldset class="contacts form__fieldset">
         <legend class="contacts__title">Контактная информация</legend>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -108,7 +108,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="operating-system">
+      <fieldset class="operating-system form__fieldset">
         <legend class="operating-system__title">С каким приложением путешествовали?</legend>
         <ul class="operating-system__list">
           <li class="operating-system__item">
@@ -126,12 +126,12 @@
         </ul>
       </fieldset>
 
-      <fieldset class="description">
+      <fieldset class="description form__fieldset">
         <legend class="description__title">Опишите свои эмоции</legend>
         <textarea class="description__text" name="text" rows="5"
           cols="45">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
-      <input class="post-form button-form" name="send" type="submit" value="Отправить форму">
+      <input class="post-form button-form button-form--indent" name="send" type="submit" value="Отправить форму">
     </form>
     <p class="necessarily"><small class="necessarily__pink">*</small> — обязательные поля</p>
   </main>
