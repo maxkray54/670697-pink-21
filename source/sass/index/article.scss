@@ -1,17 +1,16 @@
-.article{
-
-  &__title{
+.article {
+  &__title {
     font-size: 30px;
     line-height: 36px;
   }
 
-  &__description{
+  &__description {
     color: $lite-black;
     font-size: 14px;
     line-height: 24px;
   }
 
-  &__link{
+  &__link {
     color: $pink;
     font-size: 14px;
     line-height: 24px;

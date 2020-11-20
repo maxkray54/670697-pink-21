@@ -17,23 +17,23 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -43,11 +43,16 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <p class="main-subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
-      карту!</p>
-    <form name="pink" method="post" action="#">
-      <fieldset class="full-name">
+    <div class="main-title">
+      <h1 class="main-title__item">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <div class="main-subtitle">
+      <p class="main-subtitle__item">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную
+        карту!</p>
+    </div>
+    <form class="form" name="pink" method="post" action="#">
+      <fieldset class="full-name form__fieldset">
         <legend>Введите ваше ФИО</legend>
         <label class="full-name__subtitle" for="surname">Фамилия:</label>
         <input class="full-name__data" id="surname" name="surname" type="text" required placeholder="Укажите фамилию *">
@@ -57,7 +62,7 @@
         <input class="full-name__data" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
       </fieldset>
 
-      <fieldset class="achievement">
+      <fieldset class="achievement form__fieldset">
         <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="achievement__list">
           <li class="achievement__item">
@@ -87,23 +92,23 @@
         </ul>
       </fieldset>
 
-      <fieldset class="contacts">
+      <fieldset class="contacts form__fieldset">
         <legend class="contacts__title">Контактная информация</legend>
         <ul class="contacts__list">
           <li class="contacts__item">
+            <label class="contacts__subtitle" for="number">Номер телефона</label>
             <input class="contacts__communication" id="number" name="number" type="tel" required
               placeholder="Номер, пожалуйста">
-            <label class="contacts__subtitle" for="number">Номер телефона</label>
           </li>
           <li class="contacts__item">
+            <label class="contacts__subtitle" for="email">Адрес почты</label>
             <input class="contacts__communication" id="email" name="email" type="email" required
               placeholder="Введите почту *">
-            <label class="contacts__subtitle" for="email">Адрес почты</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="operating-system">
+      <fieldset class="operating-system form__fieldset">
         <legend class="operating-system__title">С каким приложением путешествовали?</legend>
         <ul class="operating-system__list">
           <li class="operating-system__item">
@@ -121,14 +126,14 @@
         </ul>
       </fieldset>
 
-      <fieldset class="descriprion">
-        <legend class="descriprion__title">Опишите свои эмоции</legend>
-        <textarea class="descriprion__text" name="text" rows="10"
+      <fieldset class="description form__fieldset">
+        <legend class="description__title">Опишите свои эмоции</legend>
+        <textarea class="description__text" name="text" rows="5"
           cols="45">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
-      <input class="post-form" name="send" type="submit" value="Отправить форму">
+      <input class="post-form button-form button-form--indent" name="send" type="submit" value="Отправить форму">
     </form>
-    <p class="necessarily">* — обязательные поля</p>
+    <p class="necessarily"><small class="necessarily__pink">*</small> — обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
