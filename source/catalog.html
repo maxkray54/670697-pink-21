@@ -43,67 +43,87 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="main-title">Фотографии пользователей</h1>
-    <p class="main-subtitle">Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?</p>
+    <div class="main-title">
+      <h1 class="main-title__item">Фотографии пользователей</h1>
+    </div>
+    <div class="main-subtitle">
+      <p class="main-subtitle__item">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+    </div>
     <div class="gallery">
       <ul class="gallery__list">
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Прыжок с горы">
-          <p class="gallery__name">Анна (5 минут назад)</p>
-          <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <button class="gallery__like">Нравится: 215</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Анна <span class="gallery__time">(5 минут назад)</span></p>
+            <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
+              в
+              перископе, задавайте свои вопросы!</p>
+            <button class="gallery__like">Нравится: 215</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Супер авто">
-          <p class="gallery__name">Левон (5 часов назад)</p>
-          <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="gallery__like">Нравится: 356</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Левон <span class="gallery__time">(5 часов назад)</span></p>
+            <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="gallery__like">Нравится: 356</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Барабаны">
-          <p class="gallery__name">Антон (12 часов назад)</p>
-          <p class="gallery__comment">Соседи будут рады!</p>
-          <button class="gallery__like">Нравится: 666</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Антон <span class="gallery__time">(12 часов назад)</span></p>
+            <p class="gallery__comment">Соседи будут рады!</p>
+            <button class="gallery__like">Нравится: 666</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Через крышу в космос">
-          <p class="gallery__name">Борис (20 часов назад)</p>
-          <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="gallery__like">Нравится: 215</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Борис <span class="gallery__time">(20 часов назад)</span></p>
+            <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="gallery__like">Нравится: 215</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Кубанская бахча">
-          <p class="gallery__name">Сергей (25 часов назад)</p>
-          <p class="gallery__comment">Самая кубанская в мире!</p>
-          <button class="gallery__like">Нравится: 4</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Сергей <span class="gallery__time">(25 часов назад)</span></p>
+            <p class="gallery__comment">Самая кубанская в мире!</p>
+            <button class="gallery__like">Нравится: 4</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Вид сверху">
-          <p class="gallery__name">Максим (40 часов назад)</p>
-          <p class="gallery__comment">Где снег-то?</p>
-          <button class="gallery__like">Нравится: 150</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Максим <span class="gallery__time">(40 часов назад)</span></p>
+            <p class="gallery__comment">Где снег-то?</p>
+            <button class="gallery__like">Нравится: 150</button>
+          </div>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Из чужого окна">
-          <p class="gallery__name">Надежда (45 часов назад)</p>
-          <p class="gallery__comment">Всем GM и взаимные лайки!</p>
-          <button class="gallery__like">Нравится: 2560</button>
+          <div class="gallery__user">
+            <p class="gallery__name">Надежда <span class="gallery__time">(45 часов назад)</span></p>
+            <p class="gallery__comment">Всем GM и взаимные лайки!</p>
+            <button class="gallery__like">Нравится: 2560</button>
+          </div>
         </li>
       </ul>
     </div>
-    <p class="main-subtitle">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-
+    <div class="main-subtitle">
+      <p class="main-subtitle__item">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
     <form name="catalog-editor" method="post" action="#">
       <fieldset class="editor">
-        <legend class="editor__title">Редактор изображений</legend>
+        <legend class="visually-hidden">Редактор изображений</legend>
         <img class="editor__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
         <label class="editor__possibility" for="size">
           Иконка
