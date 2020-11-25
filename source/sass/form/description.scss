@@ -1,14 +1,12 @@
-.description {
-  &__title {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $pink;
-  }
+.description__title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $pink;
+}
 
-  &__text {
-    font-size: 18px;
-    line-height: 30px;
-    color: $lite-black;
-  }
+.description__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: $lite-black;
 }

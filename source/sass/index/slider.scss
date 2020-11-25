@@ -1,0 +1,12 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+}

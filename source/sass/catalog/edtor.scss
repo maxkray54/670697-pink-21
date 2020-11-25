@@ -1,27 +1,27 @@
 .editor {
   background-color: $bg-gray;
   border: none;
+}
 
-  &__post {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: $pink;
-    border: 3px solid $pink;
-    box-sizing: border-box;
-    border-radius: 38px;
-    padding: 21px 90px;
-  }
+.editor__post {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $pink;
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 38px;
+  padding: 21px 90px;
+}
 
-  &__cancel {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    opacity: 0.1;
-    border: 3px solid $lite-black;
-    box-sizing: border-box;
-    border-radius: 38px;
-    padding: 21px 103px;
-    margin-bottom: 41px;
-  }
+.editor__cancel {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  opacity: 0.1;
+  border: 3px solid $lite-black;
+  box-sizing: border-box;
+  border-radius: 38px;
+  padding: 21px 103px;
+  margin-bottom: 41px;
 }

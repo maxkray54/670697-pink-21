@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -121,7 +122,7 @@
     <div class="main-subtitle">
       <p class="main-subtitle__item">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <form name="catalog-editor" method="post" action="#">
+    <form name="catalog-editor" method="post" action="https://echo.htmlacademy.ru/">
       <fieldset class="editor">
         <legend class="visually-hidden">Редактор изображений</legend>
         <img class="editor__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
@@ -138,7 +139,7 @@
         <input class="editor__variety" id="color" name="color" type="range">
         <input class="editor__variety" id="shadow" name="shadow" type="range">
         <input class="editor__post" type="button" value="Запостить">
-        <button class="editor__cancel">Отмена</button>
+        <button type="reset" class="editor__cancel">Отмена</button>
       </fieldset>
     </form>
   </main>
