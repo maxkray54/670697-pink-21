@@ -1,32 +1,117 @@
-.advantages {
-  &__sentence {
-    margin-bottom: 70px;
+.advantages__offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__sentence {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    max-width: 85%;
+  }
+}
+
+.advantages__title {
+  color: $lite-black;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
   }
 
-  &__title {
-    color: $lite-black;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 300;
-    margin-top: 46px;
-    margin-bottom: 0;
+  &--modified {
+    @media (min-width: $tablet-width) {
+      max-width: 99%;
+    }
+  }
+}
+
+.advantages__wrapper {
+  background-color: $bg-gray;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  &__list {
-    list-style: none;
-    background-color: $bg-gray;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item {
+  text-align: center;
+  margin: 0 auto;
+
+  &--disable {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
-  &__subtitle {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 
-  &__description {
-    color: $lite-black;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 43px;
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
+
+  &--modified-one {
+    @media (min-width: $tablet-width) {
+      grid-row: 1/-1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-row: 1/2;
+    }
+  }
+
+  &--modified-two {
+    @media (min-width: $desktop-width) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+
+  &--modified-three {
+    @media (min-width: $desktop-width) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+  }
+}
+
+.advantages__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.advantages__description {
+  color: $lite-black;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 43px;
 }

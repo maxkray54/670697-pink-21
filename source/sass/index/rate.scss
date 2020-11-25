@@ -1,31 +1,50 @@
 .rate {
   background-color: $bg-gray;
+}
 
-  &__wrapper {
-    padding-top: 60px;
+.rate__wrapper {
+  padding-top: 60px;
+  margin: 0 auto;
+  overflow-x: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 90%;
   }
+}
 
-  &__column {
-    background-color: $white;
-    border: 1px solid $table-stroke;
-    padding: 10px 25px;
-    font-size: 14px;
-    line-height: 30px;
-  }
+.rate__table {
+  margin: auto;
+}
 
-  &__column--dark {
+.rate__column {
+  background-color: $white;
+  border: 1px solid $table-stroke;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 30px;
+
+  &--dark {
     background-color: $lite-black;
     color: $white;
     padding: 0 25px;
     text-transform: uppercase;
   }
+}
 
-  &__name {
-    font-weight: bold;
+.rate__name {
+  font-weight: bold;
+}
+
+.rate__toggles {
+  margin-top: 45px;
+  padding-bottom: 49px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 
-  &__toggles {
-    margin-top: 45px;
-    padding-bottom: 49px;
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

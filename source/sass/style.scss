@@ -7,6 +7,8 @@
 @import "global/visually-hidden.scss";
 @import "global/main-title.scss";
 @import "global/main-subtitle.scss";
+@import "global/page-header.scss";
+@import "global/main-nav.scss";
 //index
 @import "index/application.scss";
 @import "index/platform.scss";
@@ -15,6 +17,7 @@
 @import "index/reviews.scss";
 @import "index/rate.scss";
 @import "index/connection.scss";
+@import "index/slider.scss";
 //form
 @import "form/form.scss";
 @import "form/full-name.scss";

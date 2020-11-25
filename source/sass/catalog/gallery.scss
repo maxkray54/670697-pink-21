@@ -1,50 +1,48 @@
-.gallery {
-  &__list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 12.5%;
-    gap: 20px;
-  }
+.gallery__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 12.5%;
+  gap: 20px;
+}
 
-  &__image {
-    display: block;
-  }
+.gallery__image {
+  display: block;
+}
 
-  &__user {
-    background-color: $bg-gray;
-    padding-left: 17px;
-  }
+.gallery__user {
+  background-color: $bg-gray;
+  padding-left: 17px;
+}
 
-  &__name {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: $lite-black;
-    margin: 0;
-    padding: 25px 0 14px 0;
-  }
+.gallery__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $lite-black;
+  margin: 0;
+  padding: 25px 0 14px 0;
+}
 
-  &__time {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+.gallery__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
-  &__comment {
-    font-size: 14px;
-    line-height: 24px;
-    color: $lite-black;
-    margin: 0;
-    padding-bottom: 27px;
-  }
+.gallery__comment {
+  font-size: 14px;
+  line-height: 24px;
+  color: $lite-black;
+  margin: 0;
+  padding-bottom: 27px;
+}
 
-  &__like {
-    font-size: 12px;
-    line-height: 24px;
-    color: $pink;
-    text-transform: uppercase;
-    border: none;
-    background-color: inherit;
-  }
+.gallery__like {
+  font-size: 12px;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
 }
