@@ -1,5 +1,17 @@
 .operating-system {
   background-color: $bg-gray;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    background-color: $white;
+    border: 2px solid $table-stroke;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
 }
 
 .operating-system__list {
@@ -10,6 +22,7 @@
 .operating-system__title {
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: $pink;
 }
