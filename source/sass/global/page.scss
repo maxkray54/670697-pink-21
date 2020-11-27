@@ -6,3 +6,7 @@
 .page__body {
   margin: 0;
 }
+
+.page__header + .page__main {
+  margin-top: -66px;
+}

@@ -1,3 +1,17 @@
+.full-name {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    width: 80%;
+  }
+}
+
 .full-name__subtitle {
   font-size: 14px;
   line-height: 30px;
