@@ -1,6 +1,78 @@
 .editor {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   background-color: $bg-gray;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.editor__image {
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/-1;
+  }
+}
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.editor__label-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.editor__input-wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+
+.editor__variety--disabled {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.editor__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .editor__post {
@@ -24,4 +96,8 @@
   border-radius: 38px;
   padding: 21px 103px;
   margin-bottom: 41px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

@@ -2,17 +2,54 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 12.5%;
+  grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.gallery__wrapper {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.gallery__item--modified {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .gallery__image {
   display: block;
+  width: 100%;
 }
 
 .gallery__user {
   background-color: $bg-gray;
   padding-left: 17px;
+}
+
+.gallery__user--modified {
+  width: 84%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 93%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95%;
+  }
 }
 
 .gallery__name {

@@ -4,4 +4,8 @@
   text-align: center;
   color: $lite-black;
   padding: 54px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
