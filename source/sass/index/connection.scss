@@ -69,7 +69,7 @@
 }
 
 .connection__link:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   background: $lite-black;
   left: 0;
@@ -79,7 +79,7 @@
 }
 
 .connection__link:active::after {
-  content: '';
+  content: "";
   position: absolute;
   background: inherit;
   left: 0;

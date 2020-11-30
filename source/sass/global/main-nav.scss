@@ -44,6 +44,10 @@
   cursor: pointer;
   background-color: inherit;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -65,7 +69,7 @@
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: #d22856;
   box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
-  opacity: 0.3  ;
+  opacity: 0.3;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -103,7 +107,7 @@
 
 .main-nav--opened .main-nav__toggle:active::before {
   background-color: #d22856;
-  opacity: 0.3  ;
+  opacity: 0.3;
 }
 
 .main-nav--opened .main-nav__toggle:hover::after {
@@ -112,7 +116,7 @@
 
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: #d22856;
-  opacity: 0.3  ;
+  opacity: 0.3;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -129,12 +133,6 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
-}
-
-.main-nav__toggle {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main-nav__wrapper {
