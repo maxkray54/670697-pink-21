@@ -1,22 +1,36 @@
 .application {
+  display: grid;
   background-image: url("../img/background-title.jpg");
   background-color: $lite-black;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
 
-
-.application__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .application__description {
   font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
   color: $white;
   text-align: center;
   padding-top: 100px;
   margin-bottom: 34px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.application__image {
+  margin: 0 auto;
 }

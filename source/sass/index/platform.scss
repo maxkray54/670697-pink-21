@@ -20,11 +20,32 @@
   padding: 21px 38px;
   margin-top: 28px;
   margin-bottom: 32px;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.6);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .platform__description {
   color: $white;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
   margin-top: 31px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
