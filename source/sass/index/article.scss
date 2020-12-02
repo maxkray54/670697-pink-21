@@ -14,10 +14,11 @@
 .artilce__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 90%;
+  width: 90%;
 
   @media (min-width: $desktop-width) {
     padding-left: 8%;
+    max-width: 1200px;
   }
 }
 

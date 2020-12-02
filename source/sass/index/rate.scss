@@ -17,7 +17,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 90%;
+    width: 90%;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 1200px;
   }
 }
 
