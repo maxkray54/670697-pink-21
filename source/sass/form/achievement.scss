@@ -1,4 +1,7 @@
 .achievement {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 0;
   background-color: $bg-gray;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +9,11 @@
     border: 2px solid $table-stroke;
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
     background-color: $white;
+    padding-right: 22px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,16 +32,63 @@
   }
 }
 
+.achievement__item {
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+}
+
 .achievement__title {
+  display: block;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $pink;
+  padding-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .achievement__subtitle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
   font-size: 18px;
   line-height: 30px;
   color: $lite-black;
+  padding-left: 30px;
+}
+
+.achievement__choice + .achievement__subtitle::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: -4px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $table-stroke;
+}
+
+.achievement__choice + .achievement__subtitle:hover::before {
+  border-color: $lite-black;
+}
+
+.achievement__choice + .achievement__subtitle:active::before {
+  border-color: $pink;
+}
+
+.achievement__choice:checked + .achievement__subtitle::after {
+  content: url("../img/tick.svg");
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 22px;
+  height: 16px;
 }

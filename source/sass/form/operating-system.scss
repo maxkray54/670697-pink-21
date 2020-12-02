@@ -1,4 +1,7 @@
 .operating-system {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 0;
   background-color: $bg-gray;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +10,9 @@
     border: 2px solid $table-stroke;
     width: 90%;
     margin: 0 auto;
+    padding-right: 22px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,16 +25,67 @@
   padding: 0;
 }
 
+.operating-system__item {
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+}
+
 .operating-system__title {
+  display: block;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $pink;
+  padding-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .operating-system__subtitle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
   font-size: 18px;
   line-height: 30px;
   color: $lite-black;
+  padding-left: 30px;
+}
+
+.operating-system__type + .operating-system__subtitle::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -6px;
+  width: 37px;
+  height: 37px;
+  background-color: $white;
+  border: 2px solid $table-stroke;
+  border-radius: 50%;
+}
+
+.operating-system__type + .operating-system__subtitle:hover::before {
+  border-color: $lite-black;
+}
+
+.operating-system__type + .operating-system__subtitle:active::before {
+  border-color: $pink;
+}
+
+.operating-system__type:checked + .operating-system__subtitle::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
 }

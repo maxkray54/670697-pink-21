@@ -1,12 +1,19 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     order: 3;
     border: 2px solid $table-stroke;
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,9 +34,87 @@
   }
 }
 
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__wrapper--number::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 59px;
+    width: 59px;
+    background-color: $table-stroke;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 534px;
+    pointer-events: none;
+  }
+}
+
+.contacts__wrapper--email::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 59px;
+    width: 59px;
+    background-color: $table-stroke;
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 534px;
+    pointer-events: none;
+  }
+}
+
+
 .contacts__subtitle {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: $pink;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.contacts__communication {
+  font-size: 18px;
+  line-height: 30px;
+  color: $lite-black;
+  padding: 23px 20px;
+  border: 2px solid $table-stroke;
+  border-radius: 3px;
+  outline: none;
+}
+
+.contacts__communication::placeholder {
+  color: $lite-black;
+}
+
+.contacts__communication:focus::placeholder {
+  opacity: 0;
+}
+
+.contacts__communication:hover {
+  border-color: $lite-black;
+}
+
+.contacts__communication:focus {
+  border-color: $pink;
 }

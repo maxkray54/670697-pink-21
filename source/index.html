@@ -14,7 +14,7 @@
       <div class="main-nav__head-wrapper">
         <div class="main-nav__head main-nav__head--opened">
           <a class="main-nav__logo">
-            <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Пинк">
+            <img src="img/pink.svg" width="74" height="23" alt="Пинк">
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -244,7 +244,7 @@
           </li>
           <li class="connection__item">
             <p class="connection__subtitle">Приезжайте в гости:</p>
-            <a class="connection__link" target="_blank" href="https://yandex.by/maps/-/CCUEQ0Si9A">ул. Большая
+            <a class="connection__link" target="_blank" href="https://yandex.by/maps/-/CCUEQ0Si9A">ул. Большая<br>
               Конюшенная, 19/8</a>
           </li>
         </ul>
@@ -259,44 +259,25 @@
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="145" height="40" alt="Лого">
+      <img class="page-footer__logo" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Лого">
       <ul class="page-footer__social-list">
-        <li>
-          <a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="18"
-              height="14" alt="Twitter"></a>
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link"><img src="img/twitter.svg" width="18" height="14"
+              alt="Twitter"></a>
         </li>
-        <li>
-          <a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="9"
-              height="18" alt="Facebook"></a>
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link"><img src="img/facebook.svg" width="9" height="18"
+              alt="Facebook"></a>
         </li>
-        <li>
-          <a href="#"><img class="page-footer__social-item" src="https://via.placeholder.com/150x150" width="15"
-              height="13" alt="Youtube"></a>
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link"><img src="img/youtube.svg" width="15" height="13"
+              alt="Youtube"></a>
         </li>
       </ul>
-      <p class="page-footer__developer">Разработано</p>
+      <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
-  <script>
-    // выбор нужного эелемента
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var mainNavHead = document.querySelector('.main-nav__head');
-
-    navMain.classList.remove('main-nav--nojs');
-    // ивент который срабатывает когда кликнули
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {// если закрыта
-        navMain.classList.remove('main-nav--closed');// удалить класс закрыто для выбранного выше эелеемнта
-        navMain.classList.add('main-nav--opened');// добавить класс открыто длы выбранного выше элемента
-        mainNavHead.classList.add('main-nav__head--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-        mainNavHead.classList.remove('main-nav__head--opened');
-      }
-    });
-  </script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
