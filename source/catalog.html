@@ -26,12 +26,12 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--active">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">
+              <a class="site-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
@@ -60,10 +60,11 @@
           <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
             alt="Прыжок с горы">
           <figcaption class="gallery__user gallery__user--modified">
-            <p class="gallery__name">Анна <span class="gallery__time">(5 минут назад)</span></p>
-            <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
+            <p class="gallery__name gallery__name--modified">Анна <span class="gallery__time">(5 минут назад)</span></p>
+            <p class="gallery__comment gallery__comment--modified">Прыгать или нет? Напишите в комментарии свой совет и
+              смотрите прямую трансляцию
               в перископе, задавайте свои вопросы!</p>
-            <button class="gallery__like">Нравится: 215</button>
+            <button class="gallery__like gallery__like--modified">Нравится: 215</button>
           </figcaption>
         </figure>
         <div class="gallery__wrapper">
@@ -134,24 +135,36 @@
         <div class="editor__wrapper">
           <div class="editor__label-wrapper">
             <label class="editor__possibility" for="size">
-              Иконка
+              <img src="img/crop.svg" alt="Размер" width="44" height="44">
             </label>
             <label class="editor__possibility" for="color">
-              Иконка
+              <img src="img/fill.svg" alt="Заливка" width="48" height="43">
             </label>
             <label class="editor__possibility" for="shadow">
-              Иконка
+              <img src="img/contrast.svg" alt="Контраст" width="32" height="32">
             </label>
           </div>
           <div class="editor__input-wrapper">
-            <input class="editor__variety" id="size" name="size" type="range">
-            <input class="editor__variety editor__variety--disabled" id="color" name="color" type="range">
-            <input class="editor__variety editor__variety--disabled" id="shadow" name="shadow" type="range">
+            <div class="editor__range-controls">
+              <div class="editor__scale"></div>
+              <div class="editor__toggle editor__toggle--size"></div>
+            </div>
+            <div class="editor__range-controls editor__range-controls--disable">
+              <div class="editor__scale"></div>
+              <div class="editor__toggle editor__toggle--color"></div>
+            </div>
+            <div class="editor__range-controls editor__range-controls--disable">
+              <div class="editor__scale"></div>
+              <div class="editor__toggle editor__toggle--shadow"></div>
+            </div>
+            <input class="editor__variety visually-hidden" id="size" name="size" type="range">
+            <input class="editor__variety visually-hidden" id="color" name="color" type="range">
+            <input class="editor__variety visually-hidden" id="shadow" name="shadow" type="range">
           </div>
         </div>
         <div class="editor__button-wrapper">
           <input class="editor__post" type="button" value="Запостить">
-          <button type="reset" class="editor__cancel">Отмена</button>
+          <button class="editor__cancel" type="reset">Отмена</button>
         </div>
       </fieldset>
     </form>
@@ -176,7 +189,7 @@
       <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
-  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

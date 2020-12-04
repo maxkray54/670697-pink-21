@@ -35,4 +35,23 @@
   line-height: 30px;
   color: $lite-black;
   width: 100%;
+  border: 2px solid $table-stroke;
+  border-radius: 3px;
+  outline: none;
+}
+
+.description__text::placeholder {
+  color: $lite-black;
+}
+
+.description__text:focus::placeholder {
+  opacity: 0;
+}
+
+.description__text:hover {
+  border-color: $lite-black;
+}
+
+.description__text:focus {
+  border-color: $pink;
 }

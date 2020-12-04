@@ -38,7 +38,8 @@
   align-items: flex-start;
   flex-grow: 1;
   background-color: $bg-gray;
-  padding-left: 17px;
+  padding: 0 17px;
+  position: relative;
 }
 
 .gallery__user--modified {
@@ -46,11 +47,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 93%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 17px 0 17px;
+    width: 86%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 95%;
+    width: 87%;
   }
 }
 
@@ -77,12 +82,56 @@
   padding-bottom: 27px;
 }
 
+.gallery__comment--modified {
+  @media (min-width: $tablet-width) {
+    flex: 0 0 100%;
+    order: 3;
+  }
+}
+
 .gallery__like {
   font-size: 12px;
   line-height: 24px;
   color: $pink;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
   background-color: inherit;
   margin-top: auto;
+  padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.gallery__like--modified {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-top: 26px;
+    padding-right: 38px;
+  }
+}
+
+.gallery__like::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 6px;
+  width: 13px;
+  height: 12px;
+  mask: url("../img/heart.svg") no-repeat 50% 50%;
+  mask-size: cover;
+  background-color: $pink;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+    left: unset;
+  }
+}
+
+.gallery__like--modified::before {
+  @media (min-width: $tablet-width) {
+    top: 33px;
+  }
 }

@@ -1,11 +1,7 @@
 .main-nav {
   position: relative;
   width: auto;
-  background-color: rgba(0, 0, 0, 0.2);
-
-  @media (min-width: $desktop-width) {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .main-nav__head-wrapper {
