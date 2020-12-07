@@ -97,16 +97,14 @@
 }
 
 .editor__toggle--size {
-  right: 33px;
-  left: unset;
+  left: 205px;
 
   @media (min-width: $tablet-width) {
-    right: 60px;
+    left: 175px;
   }
 
   @media (min-width: $desktop-width) {
-    right: unset;
-    left: 90px;
+    left: 319px;
   }
 }
 
@@ -114,17 +112,15 @@
   left: 49px;
 
   @media (min-width: $desktop-width) {
-    right: 60px;
-    left: unset;
+    left: 60px;
   }
 }
 
 .editor__toggle--shadow {
-  left: 119px;
+  left: 118px;
 
   @media (min-width: $desktop-width) {
-    right: 180px;
-    left: unset;
+    left: 213px;
   }
 }
 
