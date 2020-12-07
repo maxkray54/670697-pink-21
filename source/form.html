@@ -54,7 +54,7 @@
         бонусную
         карту!</p>
     </div>
-    <form class="form" name="pink" method="post" action="#">
+    <form class="form" name="pink" method="post" action="https://echo.htmlacademy.ru/">
       <fieldset class="full-name form__fieldset">
         <legend class="visually-hidden">Введите ваше ФИО</legend>
         <div class="full-name__item">
@@ -105,16 +105,18 @@
 
       <fieldset class="contacts form__fieldset">
         <legend class="contacts__title">Контактная информация</legend>
-        <div class="contacts__item">
-          <label class="contacts__subtitle" for="number">Номер телефона</label>
-          <span class="contacts__wrapper contacts__wrapper--number"><input class="contacts__communication" id="number"
-              name="number" type="tel" required placeholder="Номер, пожалуйста">
-          </span>
-        </div>
-        <div class="contacts__item">
-          <label class="contacts__subtitle" for="email">Адрес почты</label>
-          <span class="contacts__wrapper contacts__wrapper--email"><input class="contacts__communication" id="email"
-              name="email" type="email" required placeholder="Введите почту *"></span>
+        <div class="contacts__information">
+          <div class="contacts__item">
+            <label class="contacts__subtitle" for="number">Номер телефона</label>
+            <span class="contacts__wrapper contacts__wrapper--number"><input class="contacts__communication" id="number"
+                name="number" type="tel" required placeholder="Номер, пожалуйста">
+            </span>
+          </div>
+          <div class="contacts__item">
+            <label class="contacts__subtitle" for="email">Адрес почты</label>
+            <span class="contacts__wrapper contacts__wrapper--email"><input class="contacts__communication" id="email"
+                name="email" type="email" required placeholder="Введите почту *"></span>
+          </div>
         </div>
       </fieldset>
 
@@ -138,8 +140,8 @@
 
       <fieldset class="description form__fieldset">
         <legend class="description__title">Опишите свои эмоции</legend>
-        <textarea class="description__text" name="text" rows="5"
-          cols="20">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <textarea class="description__text" name="text" rows="5" cols="20"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
       <div class="post-form">
@@ -169,7 +171,7 @@
       <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
-  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

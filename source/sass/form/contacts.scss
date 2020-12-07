@@ -34,11 +34,23 @@
   }
 }
 
+.contacts__information {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .contacts__item {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 44%;
+  }
 }
 
 .contacts__wrapper {
@@ -57,8 +69,10 @@
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    left: 534px;
+    border-radius: 0 3px 3px 0;
+    right: 0;
     pointer-events: none;
+    z-index: -1;
   }
 }
 
@@ -73,8 +87,10 @@
     background-image: url("../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    left: 534px;
+    border-radius: 0 3px 3px 0;
+    right: 0;
     pointer-events: none;
+    z-index: -1;
   }
 }
 
@@ -97,10 +113,11 @@
   font-size: 18px;
   line-height: 30px;
   color: $lite-black;
-  padding: 23px 20px;
+  padding: 13px 20px;
   border: 2px solid $table-stroke;
   border-radius: 3px;
   outline: none;
+  background: none;
 }
 
 .contacts__communication::placeholder {

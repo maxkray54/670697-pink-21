@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 95%;
+    width: 88%;
     margin: 0 auto;
   }
 }
@@ -38,7 +38,8 @@
 .editor__label-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -56,11 +57,70 @@
   }
 }
 
-.editor__variety--disabled {
-  display: none;
+.editor__range-controls {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.editor__range-controls--disable {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.editor__scale {
+  height: 2px;
+  background: $lite-black;
+}
+
+.editor__toggle {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid $pink;
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.editor__toggle:active {
+  background-color: $pink;
+}
+
+.editor__toggle--size {
+  left: 205px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    left: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 319px;
+  }
+}
+
+.editor__toggle--color {
+  left: 49px;
+
+  @media (min-width: $desktop-width) {
+    left: 60px;
+  }
+}
+
+.editor__toggle--shadow {
+  left: 118px;
+
+  @media (min-width: $desktop-width) {
+    left: 213px;
   }
 }
 
@@ -86,6 +146,15 @@
   padding: 21px 90px;
 }
 
+.editor__post:hover {
+  color: $white;
+  background-color: $pink;
+}
+
+.editor__post:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .editor__cancel {
   font-size: 18px;
   line-height: 18px;
@@ -100,4 +169,13 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
+}
+
+.editor__cancel:hover {
+  opacity: 0.3;
+}
+
+.editor__cancel:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $lite-black;
 }

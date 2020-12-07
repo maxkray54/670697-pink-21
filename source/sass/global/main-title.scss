@@ -1,10 +1,11 @@
 .main-title {
   background-image: url("../img/background-title.jpg");
   background-color: $lite-black;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .main-title__item {
-  background-repeat: no-repeat;
   font-size: 24px;
   font-weight: 300;
   line-height: 33px;
