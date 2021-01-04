@@ -105,7 +105,7 @@
   }
 
   &--modified-one {
-    background-image: url('../img/advantages-mobile.png');
+    background-image: url("../img/advantages-mobile.png");
     background-repeat: no-repeat;
     background-position-x: center;
     width: 157px;
@@ -113,38 +113,35 @@
     margin: 0 auto;
     margin-top: 40px;
 
-    @media
-    (min-resolution: 2dppx) {
-      background-image: url('../img/advantages-mobile2x.png');
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-mobile2x.png");
       background-size: 157px 320px;
     }
 
     @media (min-width: $tablet-width) {
       grid-row: 1/-1;
-      background-image: url('../img/advantages-tablet.png');
+      background-image: url("../img/advantages-tablet.png");
       width: 268px;
       height: 480px;
       margin-left: -13px;
       margin-top: 36px;
 
-      @media
-      (min-resolution: 2dppx) {
-        background-image: url('../img/advantages-tablet2x.png');
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantages-tablet2x.png");
         background-size: 268px 547px;
       }
     }
 
     @media (min-width: $desktop-width) {
       grid-row: 1/2;
-      background-image: url('../img/advantages-desktop1.png');
+      background-image: url("../img/advantages-desktop1.png");
       width: 186px;
       height: 299px;
       margin: 0 auto;
       margin-top: 59px;
 
-      @media
-      (min-resolution: 2dppx) {
-        background-image: url('../img/advantages-desktop1-2x.png');
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantages-desktop1-2x.png");
         background-size: 186px 382px;
       }
     }
@@ -154,15 +151,14 @@
     @media (min-width: $desktop-width) {
       grid-column: 2/3;
       grid-row: 1/2;
-      background-image: url('../img/advantages-desktop2.png');
+      background-image: url("../img/advantages-desktop2.png");
       background-repeat: no-repeat;
       background-position-x: center;
       height: 299px;
       margin-top: 59px;
 
-      @media
-      (min-resolution: 2dppx) {
-        background-image: url('../img/advantages-desktop2-2x.png');
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantages-desktop2-2x.png");
         background-size: 186px 382px;
       }
     }
@@ -172,15 +168,14 @@
     @media (min-width: $desktop-width) {
       grid-column: 3/4;
       grid-row: 1/2;
-      background-image: url('../img/advantages-desktop3.png');
+      background-image: url("../img/advantages-desktop3.png");
       background-repeat: no-repeat;
       background-position-x: center;
       height: 299px;
       margin-top: 59px;
 
-      @media
-      (min-resolution: 2dppx) {
-        background-image: url('../img/advantages-desktop3-2x.png');
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantages-desktop3-2x.png");
         background-size: 186px 382px;
       }
     }
