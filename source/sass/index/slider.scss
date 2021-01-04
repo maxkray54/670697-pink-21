@@ -11,17 +11,10 @@
   }
 }
 
-.slider__toggles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .slider__toggle {
   cursor: pointer;
   height: 6px;
   width: 6px;
-  margin: 0 10px;
   background-color: rgba(40, 54, 69, 0.3);
   border-radius: 50%;
   display: inline-block;

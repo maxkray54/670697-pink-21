@@ -9,4 +9,8 @@
 
 .page__header + .page__main {
   margin-top: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
 }

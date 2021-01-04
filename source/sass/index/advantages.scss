@@ -6,15 +6,16 @@
 .advantages__sentence {
   text-align: center;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
-    width: 85%;
+    width: 90%;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
+    margin-top: 62px;
   }
 }
 
@@ -36,48 +37,58 @@
   }
 
   &--modified {
+    margin-bottom: 29px;
+
     @media (min-width: $tablet-width) {
-      max-width: 99%;
+      margin-bottom: 0;
     }
   }
 }
 
 .advantages__wrapper {
-  background-image: url("../img/gray-bg.png");
+  background-image: url("../img/grey-bg.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .advantages__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 44% 28% 33%;
     width: 90%;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 90%;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
 .advantages__item {
   text-align: center;
-  margin: 0 auto;
+  padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 
   &--modified-padding {
-    padding-top: 80px;
+    padding-top: 81px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 37px;
+      padding-top: 88px;
     }
 
     @media (min-width: $desktop-width) {
@@ -93,21 +104,49 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: center;
-  }
-
   &--modified-one {
+    background-image: url('../img/advantages-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 157px;
+    height: 277px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    @media
+    (min-resolution: 2dppx) {
+      background-image: url('../img/advantages-mobile2x.png');
+      background-size: 157px 320px;
+    }
+
     @media (min-width: $tablet-width) {
       grid-row: 1/-1;
+      background-image: url('../img/advantages-tablet.png');
+      width: 268px;
+      height: 480px;
+      margin-left: -13px;
+      margin-top: 36px;
+
+      @media
+      (min-resolution: 2dppx) {
+        background-image: url('../img/advantages-tablet2x.png');
+        background-size: 268px 547px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       grid-row: 1/2;
+      background-image: url('../img/advantages-desktop1.png');
+      width: 186px;
+      height: 299px;
+      margin: 0 auto;
+      margin-top: 59px;
+
+      @media
+      (min-resolution: 2dppx) {
+        background-image: url('../img/advantages-desktop1-2x.png');
+        background-size: 186px 382px;
+      }
     }
   }
 
@@ -115,6 +154,17 @@
     @media (min-width: $desktop-width) {
       grid-column: 2/3;
       grid-row: 1/2;
+      background-image: url('../img/advantages-desktop2.png');
+      background-repeat: no-repeat;
+      background-position-x: center;
+      height: 299px;
+      margin-top: 59px;
+
+      @media
+      (min-resolution: 2dppx) {
+        background-image: url('../img/advantages-desktop2-2x.png');
+        background-size: 186px 382px;
+      }
     }
   }
 
@@ -122,6 +172,17 @@
     @media (min-width: $desktop-width) {
       grid-column: 3/4;
       grid-row: 1/2;
+      background-image: url('../img/advantages-desktop3.png');
+      background-repeat: no-repeat;
+      background-position-x: center;
+      height: 299px;
+      margin-top: 59px;
+
+      @media
+      (min-resolution: 2dppx) {
+        background-image: url('../img/advantages-desktop3-2x.png');
+        background-size: 186px 382px;
+      }
     }
   }
 }
@@ -136,11 +197,13 @@
 .advantages__subtitle {
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    margin-top: 54px;
+    margin-bottom: 26px;
   }
 }
 
@@ -148,9 +211,10 @@
   color: $lite-black;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 10px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 29px;
   }
 }
