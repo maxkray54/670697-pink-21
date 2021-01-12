@@ -1,19 +1,30 @@
 .application {
   display: grid;
-  background-image: url("../img/background-title.jpg");
+  background-image: url("../img/background-title-mobile.jpg");
   background-color: $lite-black;
   background-repeat: no-repeat;
   background-size: 100% 63%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-title-mobile2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    background-image: url("../img/background-title-tablet.jpg");
     background-size: 100% 100%;
-  }
-}
 
-@media (min-resolution: 2dppx) {
-  .application {
-    background-image: url("../img/background-title2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-title-tablet2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/background-title.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-title2x.jpg");
+    }
   }
 }
 
@@ -21,12 +32,12 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 90px;
+    margin-top: 88px;
     padding-bottom: 280px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 204px;
+    margin-top: 203px;
     z-index: 1;
   }
 
@@ -88,8 +99,8 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 3px;
-    margin-left: 10px;
+    margin-bottom: 2px;
+    margin-left: 8px;
   }
 
   @media (min-width: $desktop-width) {

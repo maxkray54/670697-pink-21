@@ -1,22 +1,26 @@
 .connection__triangle {
   position: relative;
+  z-index: 1;
 }
 
 .connection__triangle::after {
   content: "";
   position: absolute;
-  bottom: -77px;
+  bottom: -34px;
   width: 100%;
   height: 123px;
-  background-image: url("../img/white-footer.svg");
+  background-image: url("../img/white-footer-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    bottom: -95px;
+    background-image: url("../img/white-footer-tablet.svg");
+    bottom: -67px;
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/white-footer-desktop.svg");
     bottom: -96px;
   }
 }
