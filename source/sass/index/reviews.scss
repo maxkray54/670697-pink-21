@@ -5,31 +5,116 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 90%;
+    width: 95%;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    flex-direction: row;
+    width: 64%;
     max-width: 1200px;
+    margin-left: 257px;
+    margin-bottom: -8px;
+    padding-top: 150px;
   }
+}
+
+.reviews__wrapper::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 73px;
+    left: 304px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__button {
+  display: none;
+  border: none;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.reviews__button--prev {
+  position: absolute;
+  left: -127px;
+  top: 213px;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/left-arrow.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.reviews__button--prev:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--prev:active {
+  opacity: 0.1;
+  outline: none;
+}
+
+.reviews__button--next {
+  position: absolute;
+  right: -45px;
+  top: 213px;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.reviews__button--next:hover {
+  opacity: 0.6;
+}
+
+.reviews__button--next:active {
+  opacity: 0.1;
 }
 
 .reviews__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .reviews__item {
+  position: relative;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .reviews__name {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 31px;
+  margin-top: 26px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     order: 2;
     font-size: 20px;
+    margin-top: 19px;
+    margin-bottom: -14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +126,8 @@
   color: $lite-black;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 44px;
+  margin-top: 0;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -66,5 +152,17 @@
 }
 
 .reviews__toggles {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1px;
+  margin-right: 5px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__toggle {
+  margin: 0 9px;
 }
