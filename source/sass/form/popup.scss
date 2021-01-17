@@ -1,0 +1,151 @@
+.popup {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  &--error {
+    top: 1165px;
+  }
+
+  &--success {
+    top: 1638px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    &--error {
+      top: 909px;
+    }
+
+    &--success {
+      top: 1383px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--error {
+      top: 817px;
+    }
+
+    &--success {
+      top: 1275px;
+    }
+  }
+}
+
+.popup__wrapper {
+  display: none;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    border-radius: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  margin: 0;
+  margin-bottom: 24px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 69px;
+    padding-right: 65px;
+  }
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.popup__text--error {
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.popup__text--success {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+}
+
+
+.popup__button--error {
+  padding: 17px 128px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 137px;
+  }
+}
+
+.popup__button--success {
+  padding: 17px 67px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 157px;
+  }
+}
+
+.popup__button-area {
+  padding-top: 40px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.popup__button-area--success {
+  background-color: $bg-gray;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+  }
+}

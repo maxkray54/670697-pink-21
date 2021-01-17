@@ -19,6 +19,37 @@
   }
 }
 
+.page-footer__logo {
+  fill: $lite-black;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $lite-black;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo--mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo--desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .page-footer__social-list {
   display: flex;
   width: 59%;
