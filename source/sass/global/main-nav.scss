@@ -40,6 +40,16 @@
   padding-left: 20px;
   padding-bottom: 24px;
   margin-top: 20px;
+  fill: white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 145px;
@@ -56,6 +66,39 @@
   }
 }
 
+.main-nav__logo--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo--desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
 
 .main-nav__toggle {
   position: absolute;
@@ -83,16 +126,12 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 17px;
-  width: 48px;
-  height: 3px;
+  top: 15px;
+  left: 15px;
+  width: 50px;
+  height: 4px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
-
-  @media (min-width: $tablet-width) {
-    width: 50px;
-  }
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {

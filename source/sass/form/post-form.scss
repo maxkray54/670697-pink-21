@@ -13,6 +13,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+    width: 78%;
+    height: 131px;
   }
 }
 
@@ -20,8 +22,26 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 83px;
+  }
 }
 
 .post-form__necessarily-pink {
   color: $pink;
+}
+
+.post-form__necessarily-fill {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: initial;
+  }
 }

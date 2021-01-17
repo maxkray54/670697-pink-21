@@ -1,5 +1,5 @@
 .achievement {
-  padding-left: 22px;
+  padding-left: 32px;
   padding-right: 22px;
   padding-bottom: 0;
   background-color: $bg-gray;
@@ -7,23 +7,28 @@
   @media (min-width: $tablet-width) {
     order: 4;
     border: 2px solid $table-stroke;
-    width: 90%;
+    border-radius: 2px;
+    width: 85%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 55px;
     background-color: $white;
     padding-right: 22px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 9px;
+    padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+    width: 73%;
+    padding-right: 27px;
+    padding-bottom: 12px;
   }
 }
 
 .achievement__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 6px;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -34,12 +39,55 @@
 
 .achievement__item {
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 87px;
+    padding-top: 11px;
+    padding-bottom: 41px;
+    padding-left: 37px;
   }
 }
+
+.achievement__item--one {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.achievement__item--two {
+  @media (min-width: $desktop-width) {
+    order: 2;
+    padding-left: 61px;
+  }
+}
+
+.achievement__item--three {
+  @media (min-width: $desktop-width) {
+    order: 3;
+    padding-left: 64px;
+  }
+}
+
+.achievement__item--four {
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
+.achievement__item--five {
+  @media (min-width: $desktop-width) {
+    order: 5;
+    padding-left: 61px;
+  }
+}
+
+.achievement__item--six {
+  @media (min-width: $desktop-width) {
+    order: 6;
+    padding-left: 64px;
+  }
+}
+
 
 .achievement__title {
   display: block;
@@ -48,10 +96,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $pink;
-  padding-top: 44px;
+  padding: 80px 14px 7px 3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding: 4px 40px 7px 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 33px 6px 29px;
   }
 }
 
@@ -63,7 +115,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $lite-black;
-  padding-left: 30px;
+  padding-left: 47px;
 }
 
 .achievement__choice + .achievement__subtitle::before {
@@ -87,7 +139,7 @@
 .achievement__choice:checked + .achievement__subtitle::after {
   content: url("../img/tick.svg");
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: -3px;
   width: 22px;
   height: 16px;

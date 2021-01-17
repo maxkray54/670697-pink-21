@@ -1,8 +1,8 @@
 .full-name {
   display: flex;
   flex-direction: column;
-  padding-left: 12px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -11,7 +11,9 @@
 
   @media (min-width: $desktop-width) {
     justify-self: center;
-    width: 80%;
+    width: 72%;
+    padding-left: 113px;
+    padding-top: 19px;
   }
 }
 
@@ -22,7 +24,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 52px;
   }
 }
 
@@ -31,14 +33,39 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $pink;
-  margin-top: 10px;
-  padding-left: 15px;
-  padding-bottom: 5px;
+  padding-left: 22px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    padding-right: 10px;
+    padding-right: 19px;
     margin-top: 0;
+  }
+}
+
+.full-name__subtitle--one {
+  margin-top: 10px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+}
+
+.full-name__subtitle--two {
+  margin-top: 16px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+}
+
+.full-name__subtitle--three {
+  margin-top: 16px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
   }
 }
 
@@ -46,7 +73,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $lite-black;
-  padding: 23px 20px;
+  padding: 15px 20px;
   border: 2px solid $table-stroke;
   border-radius: 3px;
   outline: none;
