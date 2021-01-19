@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -13,29 +13,37 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__head-wrapper">
         <div class="main-nav__head main-nav__head--opened">
-          <a class="main-nav__logo">
-            <img src="img/pink.svg" width="74" height="23" alt="Пинк">
+          <a class="main-nav__logo" href="index.html">
+            <svg class="main-nav__logo--mobile" width="74" height="23">
+              <use xlink:href="img/sprite.svg#pink"></use>
+            </svg>
+            <svg class="main-nav__logo--tablet" width="145" height="40">
+              <use xlink:href="img/sprite.svg#pink-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo--desktop" width="147" height="40">
+              <use xlink:href="img/sprite.svg#pink-desktop"></use>
+            </svg>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--padding-one">
               <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--padding-two">
               <a class="site-list__link site-list__link--active">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--padding-three">
               <a class="site-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--padding-four">
               <a class="site-list__link" href="#">
                 HTML Academy
               </a>
@@ -47,21 +55,31 @@
   </header>
   <main class="page__main page-main">
     <div class="main-title">
-      <h1 class="main-title__item">Фотографии пользователей</h1>
+      <h1 class="main-title__item main-title__item--padding">Фотографии пользователей</h1>
     </div>
     <div class="main-subtitle">
-      <p class="main-subtitle__item">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="main-subtitle__item main-subtitle__item--upper">Взгляните на фотографии, которые выкладывают
+        пользователи! &nbsp;<br class="break break--desktop">
         Видите, как не хватает ваших?</p>
     </div>
     <section class="gallery">
       <h2 class="visually-hidden">Галлерея</h2>
       <div class="gallery__list">
         <figure class="gallery__item gallery__item--modified">
-          <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-            alt="Прыжок с горы">
+          <a class="gallery__link gallery__link--main" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/panorama-desktop.webp 1x, img/panorama-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/panorama-tablet.webp 1x, img/panorama-tablet2x.webp 2x">
+              <img class="gallery__image" src="img/panorama-mobile.webp" srcset="img/panorama-mobile2x.webp 2x"
+                alt="Прыжок с горы">
+            </picture>
+          </a>
           <figcaption class="gallery__user gallery__user--modified">
             <p class="gallery__name gallery__name--modified">Анна <span class="gallery__time">(5 минут назад)</span></p>
-            <p class="gallery__comment gallery__comment--modified">Прыгать или нет? Напишите в комментарии свой совет и
+            <p class="gallery__comment gallery__comment--modified">Прыгать или нет? Напишите в комментарии свой совет
+              и&nbsp;<br class="break break--mobile">
               смотрите прямую трансляцию
               в перископе, задавайте свои вопросы!</p>
             <button class="gallery__like gallery__like--modified">Нравится: 215</button>
@@ -69,8 +87,16 @@
         </figure>
         <div class="gallery__wrapper">
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Супер авто">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-1-mobile.webp" srcset="img/photo-1-mobile2x.webp 2x"
+                  alt="Супер авто">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Левон <span class="gallery__time">(5 часов назад)</span></p>
               <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -78,8 +104,16 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Барабаны">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-2-mobile.webp" srcset="img/photo-2-mobile2x.webp 2x"
+                  alt="Барабаны">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Антон <span class="gallery__time">(12 часов назад)</span></p>
               <p class="gallery__comment">Соседи будут рады!</p>
@@ -87,8 +121,16 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Через крышу в космос">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-3-mobile.webp" srcset="img/photo-3-mobile2x.webp 2x"
+                  alt="Через крышу в космос">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Борис <span class="gallery__time">(20 часов назад)</span></p>
               <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -96,8 +138,16 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Кубанская бахча">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-4-mobile.webp" srcset="img/photo-4-mobile2x.webp 2x"
+                  alt="Кубанская бахча">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Сергей <span class="gallery__time">(25 часов назад)</span></p>
               <p class="gallery__comment">Самая кубанская в мире!</p>
@@ -105,17 +155,33 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Вид сверху">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-5-mobile.webp" srcset="img/photo-5-mobile2x.webp 2x"
+                  alt="Вид сверху">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Максим <span class="gallery__time">(40 часов назад)</span></p>
               <p class="gallery__comment">Где снег-то?</p>
-              <button class="gallery__like">Нравится: 150</button>
+              <button class="gallery__like gallery__like--five">Нравится: 150</button>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Из чужого окна">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet2x.webp 2x">
+                <img class="gallery__image" src="img/photo-6-mobile.webp" srcset="img/photo-6-mobile2x.webp 2x"
+                  alt="Из чужого окна">
+              </picture>
+            </a>
             <figcaption class="gallery__user">
               <p class="gallery__name">Надежда <span class="gallery__time">(45 часов назад)</span></p>
               <p class="gallery__comment">Всем GM и взаимные лайки!</p>
@@ -126,38 +192,49 @@
       </div>
     </section>
     <div class="main-subtitle">
-      <p class="main-subtitle__item">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="main-subtitle__item main-subtitle__item--lower">Затмите их всех!<br> Выкладывайте все, что накопилось в
+        телефоне!</p>
     </div>
     <form name="catalog-editor" method="post" action="https://echo.htmlacademy.ru/">
       <fieldset class="editor">
         <legend class="visually-hidden">Редактор изображений</legend>
-        <img class="editor__image" src="https://via.placeholder.com/150x150" width="300" height="400" alt="">
+        <picture class="editor__image">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/editor-desktop.jpg 1x, img/editor-desktop2x.jpg 2x">
+          <img src="img/editor-mobile.jpg" srcset="img/editor-mobile2x.jpg 2x" alt="Из чужого окна">
+        </picture>
         <div class="editor__wrapper">
           <div class="editor__label-wrapper">
-            <label class="editor__possibility" for="size">
-              <img src="img/crop.svg" alt="Размер" width="44" height="44">
+            <label class="editor__possibility" for="size" tabindex="0">
+              <svg class="editor__item editor__item--crop" width="44" height="44">
+                <use xlink:href="img/sprite.svg#crop"></use>
+              </svg>
             </label>
-            <label class="editor__possibility" for="color">
-              <img src="img/fill.svg" alt="Заливка" width="48" height="43">
+            <label class="editor__possibility" for="color" tabindex="0">
+              <svg class="editor__item editor__item--fill" width="48" height="43">
+                <use xlink:href="img/sprite.svg#fill"></use>
+              </svg>
             </label>
-            <label class="editor__possibility" for="shadow">
-              <img src="img/contrast.svg" alt="Контраст" width="32" height="32">
+            <label class="editor__possibility" for="shadow" tabindex="0">
+              <svg class="editor__item editor__item--contrast" width="32" height="32">
+                <use xlink:href="img/sprite.svg#contrast"></use>
+              </svg>
             </label>
           </div>
           <div class="editor__input-wrapper">
             <div class="editor__range-controls">
               <div class="editor__scale"></div>
-              <div class="editor__toggle editor__toggle--size"></div>
+              <div class="editor__toggle editor__toggle--size" tabindex="0"></div>
             </div>
             <input class="editor__variety visually-hidden" id="size" name="size" type="range" value="75">
             <div class="editor__range-controls editor__range-controls--disable">
               <div class="editor__scale"></div>
-              <div class="editor__toggle editor__toggle--color"></div>
+              <div class="editor__toggle editor__toggle--color" tabindex="0"></div>
             </div>
             <input class="editor__variety visually-hidden" id="color" name="color" type="range" value="10">
             <div class="editor__range-controls editor__range-controls--disable">
               <div class="editor__scale"></div>
-              <div class="editor__toggle editor__toggle--shadow"></div>
+              <div class="editor__toggle editor__toggle--shadow" tabindex="0"></div>
             </div>
             <input class="editor__variety visually-hidden" id="shadow" name="shadow" type="range" value="50">
           </div>
@@ -171,25 +248,41 @@
   </main>
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Лого">
+      <a href="index.html">
+        <svg class="page-footer__logo page-footer__logo--mobile" width="145" height="40">
+          <use xlink:href="img/sprite.svg#logotype-blue-tablet"></use>
+        </svg>
+        <svg class="page-footer__logo page-footer__logo--desktop" width="145" height="40">
+          <use xlink:href="img/sprite.svg#logotype-blue-desktop"></use>
+        </svg>
+      </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link"><img src="img/twitter.svg" width="18" height="14"
-              alt="Twitter"></a>
+          <a href="#" class="page-footer__social-link">
+            <svg width="18" height="14">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link"><img src="img/facebook.svg" width="9" height="18"
-              alt="Facebook"></a>
+          <a href="#" class="page-footer__social-link">
+            <svg width="9" height="18">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link"><img src="img/youtube.svg" width="15" height="13"
-              alt="Youtube"></a>
+          <a href="#" class="page-footer__social-link">
+            <svg width="15" height="13">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

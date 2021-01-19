@@ -110,3 +110,7 @@
   background-color: $pink;
   border-radius: 50%;
 }
+
+.operating-system__type:focus + .operating-system__subtitle::before {
+  border-color: $lite-black;
+}

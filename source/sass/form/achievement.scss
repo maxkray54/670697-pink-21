@@ -144,3 +144,11 @@
   width: 22px;
   height: 16px;
 }
+
+.achievement__choice + .achievement__subtitle:focus::before {
+  border-color: $lite-black;
+}
+
+.achievement__choice:focus + .achievement__subtitle::before {
+  border-color: $lite-black;
+}

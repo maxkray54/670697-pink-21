@@ -1,23 +1,33 @@
 .gallery__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 51px;
+  }
 }
 
 .gallery__wrapper {
   display: grid;
   gap: 20px;
-  width: 90%;
+  width: 88%;
   margin: auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    width: 95%;
+    width: 94%;
+    gap: 21px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
+    width: 78%;
+    gap: 56px 22px;
   }
 }
 
@@ -26,6 +36,33 @@
   flex-direction: column;
   margin: 0;
 }
+
+.gallery__link--main {
+  position: relative;
+}
+
+.gallery__link--main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  background-image: url("../img/panorama-dny.svg");
+
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+    right: 20px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    right: 130px;
+  }
+}
+
 
 .gallery__image {
   display: block;
@@ -40,22 +77,29 @@
   background-color: $bg-gray;
   padding: 0 17px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 26px;
+  }
 }
 
 .gallery__user--modified {
-  width: 84%;
+  width: 82%;
   margin: 0 auto;
+  padding: 0 0;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 17px 0 17px;
-    width: 86%;
+    padding: 0 29px 0 29px;
+    width: 85%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 87%;
+    width: 74%;
+    padding: 0 26px 0 26px;
   }
 }
 
@@ -65,7 +109,15 @@
   font-weight: 700;
   color: $lite-black;
   margin: 0;
-  padding: 25px 0 14px 0;
+  padding: 17px 0 1px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0 1px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0 1px 0;
+  }
 }
 
 .gallery__time {
@@ -79,13 +131,15 @@
   line-height: 24px;
   color: $lite-black;
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 11px;
 }
 
 .gallery__comment--modified {
   @media (min-width: $tablet-width) {
     flex: 0 0 100%;
     order: 3;
+    margin-top: -1px;
+    padding-bottom: 25px;
   }
 }
 
@@ -99,25 +153,43 @@
   background-color: inherit;
   margin-top: auto;
   padding-left: 30px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.gallery__like--five {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
 
 .gallery__like--modified {
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-top: 26px;
-    padding-right: 38px;
+    margin-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    padding-right: 33px;
   }
 }
 
 .gallery__like::before {
   content: "";
   position: absolute;
-  bottom: 7px;
-  left: 6px;
+  bottom: 24px;
+  left: 17px;
   width: 13px;
   height: 12px;
   mask: url("../img/heart.svg") no-repeat 50% 50%;
@@ -125,13 +197,14 @@
   background-color: $pink;
 
   @media (min-width: $tablet-width) {
-    right: 22px;
+    bottom: 29px;
+    right: 30px;
     left: unset;
   }
 }
 
 .gallery__like--modified::before {
   @media (min-width: $tablet-width) {
-    top: 33px;
+    top: 30px;
   }
 }

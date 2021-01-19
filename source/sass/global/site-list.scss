@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 0;
-    margin-left: 50px;
+    margin-left: 54px;
   }
 }
 
@@ -44,6 +44,7 @@
     text-transform: unset;
     line-height: 18px;
     font-weight: 400;
+    padding: 0;
 
     &:active {
       color: $white;
@@ -54,13 +55,13 @@
 
 .site-list__item--padding-two {
   @media (min-width: $desktop-width) {
-    padding-right: 19px;
+    padding-right: 14px;
   }
 }
 
 .site-list__item--padding-three {
   @media (min-width: $desktop-width) {
-    padding-right: 21px;
+    padding-right: 15px;
   }
 }
 

@@ -44,3 +44,15 @@
     padding: 168px 69px 90px 69px;
   }
 }
+
+.main-title__item--padding {
+  padding: 92px 46px 77px 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 175px 46px 137px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 168px 277px 89px 277px;
+  }
+}
