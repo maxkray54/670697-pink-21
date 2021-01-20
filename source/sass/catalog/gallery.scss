@@ -79,6 +79,10 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding: 0 29px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0 26px;
   }
 }
