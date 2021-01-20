@@ -67,6 +67,9 @@
 }
 
 .main-nav__logo--mobile {
+  width: 100%;
+  height: 100%;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -77,6 +80,8 @@
 }
 
 .main-nav__logo--tablet {
+  width: 145px;
+  height: 40px;
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -89,6 +94,8 @@
 }
 
 .main-nav__logo--desktop {
+  width: 147px;
+  height: 40px;
   display: none;
 
   @media (min-width: $tablet-width) {
