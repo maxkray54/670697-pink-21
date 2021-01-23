@@ -31,7 +31,7 @@
   line-height: 33px;
   text-align: center;
   color: $white;
-  padding: 92px 46px 44px 46px;
+  padding: 96px 46px 44px 46px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -41,18 +41,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 168px 69px 90px 69px;
+    padding: 168px 69px 88px 69px;
   }
 }
 
 .main-title__item--padding {
-  padding: 92px 46px 77px 46px;
+  padding: 97px 46px 77px 46px;
 
   @media (min-width: $tablet-width) {
-    padding: 175px 46px 137px 46px;
+    padding: 173px 46px 128px 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 168px 277px 89px 277px;
+    padding: 167px 277px 89px 277px;
   }
 }

@@ -146,7 +146,7 @@
     @media (min-width: $desktop-width) {
       grid-row: 1/2;
       background-image: url("../img/advantages-desktop1.png");
-      height: 299px;
+      height: 298px;
       margin: 0 auto;
       margin-top: 59px;
 
@@ -164,7 +164,7 @@
       background-image: url("../img/advantages-desktop2.png");
       background-repeat: no-repeat;
       background-position-x: center;
-      height: 299px;
+      height: 298px;
       margin-top: 59px;
 
       @media (min-resolution: 2dppx) {
@@ -181,7 +181,7 @@
       background-image: url("../img/advantages-desktop3.png");
       background-repeat: no-repeat;
       background-position-x: center;
-      height: 299px;
+      height: 298px;
       margin-top: 59px;
 
       @media (min-resolution: 2dppx) {
@@ -211,7 +211,7 @@
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-top: 54px;
+    margin-top: 56px;
     margin-bottom: 26px;
   }
 }
