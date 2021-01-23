@@ -187,35 +187,35 @@
   height: 2px;
 }
 
-// .connection__map-container {
-//   width: 100%;
-//   height: 200px;
-//   background-image: url("../img/map-mobile.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
+.connection__map-container {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-//   @media (min-resolution: 2dppx) {
-//     background-image: url("../img/map-mobile2x.jpg");
-//   }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile2x.jpg");
+  }
 
-//   @media (min-width: $tablet-width) {
-//     height: 374px;
-//     background-image: url("../img/map-tablet.jpg");
+  @media (min-width: $tablet-width) {
+    height: 374px;
+    background-image: url("../img/map-tablet.jpg");
 
-//     @media (min-resolution: 2dppx) {
-//       background-image: url("../img/map-tablet2x.jpg");
-//     }
-//   }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet2x.jpg");
+    }
+  }
 
-//   @media (min-width: $desktop-width) {
-//     height: 493px;
-//     background-image: url("../img/map-desktop.jpg");
+  @media (min-width: $desktop-width) {
+    height: 493px;
+    background-image: url("../img/map-desktop.jpg");
 
-//     @media (min-resolution: 2dppx) {
-//       background-image: url("../img/map-desktop2x.jpg");
-//     }
-//   }
-// }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop2x.jpg");
+    }
+  }
+}
 
 .connection__map {
   width: 100%;
