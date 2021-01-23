@@ -190,6 +190,7 @@
 .connection__map-container {
   width: 100%;
   height: 200px;
+  margin-bottom: 41px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,6 +201,7 @@
 
   @media (min-width: $tablet-width) {
     height: 374px;
+    margin-bottom: 9px;
     background-image: url("../img/map-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -208,7 +210,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 493px;
+    height: 497px;
     background-image: url("../img/map-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -226,6 +228,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 493px;
+    height: 497px;
   }
 }
